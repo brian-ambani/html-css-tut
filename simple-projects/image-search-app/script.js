@@ -33,6 +33,7 @@ async function searchImages() {
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("search-result");
     imgContainer.appendChild(img);
+    imgContainer.appendChild(imagelink);
     searchResults.appendChild(imgContainer);
   });
 
