@@ -57,3 +57,30 @@
 .sidebar.active .top .logo {
   opacity: 1;
 }
+
+.sidebar .top .lop i {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.user p {
+  color: #fff;
+  margin-left: 1 rem;
+  opacity: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.sidebar p {
+  opacity: 0;
+}
+
+.sidebar.active p {
+  opacity: 1;
+}
