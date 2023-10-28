@@ -136,3 +136,11 @@
   z-index: 20;
   opacity: 0;
 }
+
+.sidebar ul li:hover .tooltip {
+  opacity: 1;
+}
+
+.sidebar.active ul li .tooltip {
+  display: none;
+}
