@@ -23,14 +23,15 @@ async function searchImages() {
 
   results.map((result) => {
     const img = document.createElement("img");
-    img.src = result.urls.regular;
+    img.src = result.urls.small;
     img.alt = result.alt_description;
-    img.href = result.links.html;
-    img.target = "_blank";
-    img.textContent = result.alt_description;
+    const imagelink = document.createElement("a");
+    imagelink.href = result.links.html;
+    imagelink.target = "_blank";
+    imagelink.textContent = result.alt_description;
 
     const imgContainer = document.createElement("div");
-    imgContainer.classList.add("img-container");
+    imgContainer.classList.add("search-result");
     imgContainer.appendChild(img);
     searchResults.appendChild(imgContainer);
   });
